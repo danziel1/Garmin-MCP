@@ -21,13 +21,8 @@ All daily tools accept a `days` argument that includes today. `get_recent_activi
 
 ### 1. Install Python
 
-Install Python 3.10 or newer from [python.org](https://www.python.org/downloads/). On Windows, enable **Add Python to PATH** during installation.
+Install Python 3.10 or newer from [python.org](https://www.python.org/downloads/).
 
-Verify the installation:
-
-```powershell
-python --version
-```
 
 ### 2. Install the requirements
 
