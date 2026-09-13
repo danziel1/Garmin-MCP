@@ -92,7 +92,7 @@ def get_sleep_data(days: int) -> list:
 @mcp.tool()
 def get_heart_rate_data(days: int) -> list:
     """
-    Get the user's heart date data.
+    Get the user's heart rate data.
     
     Args:
         days: Number of days to fetch (including today).
@@ -112,8 +112,7 @@ def get_heart_rate_data(days: int) -> list:
         average = 0
         noneCount = 0
         for i in heartRates:
-            print(i)
-            if (i[1] != None): 
+            if (i[1] != None and i[1] != 0): 
                 average += i[1]
             else:
                 noneCount += 1
@@ -182,7 +181,7 @@ def get_stress_data(days: int) -> list:
 @mcp.tool()
 def get_vO2_data(days: int) -> list:
     """
-    Get the user's stress data.
+    Get the user's VO2 max data.
     
     Args:
         days: Number of days to fetch (including today).
